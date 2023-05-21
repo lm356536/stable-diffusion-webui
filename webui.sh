@@ -172,6 +172,8 @@ else
     exit 1
 fi
 
+pip install socksio
+
 if [[ ! -z "${ACCELERATE}" ]] && [ ${ACCELERATE}="True" ] && [ -x "$(command -v accelerate)" ]
 then
     printf "\n%s\n" "${delimiter}"
